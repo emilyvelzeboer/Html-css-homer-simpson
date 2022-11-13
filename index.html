@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homer Simpson's Portfolio</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- navigator -->
+    <nav class="navbar">
+        <img class="logo" src="https://icons.iconarchive.com/icons/jonathan-rey/simpsons/256/Homer-Simpson-02-Donut-icon.png" alt="Emily pic" >
+        <ul>
+          <li><a class="link" href="#About me">About me</a></li>
+          <li><a class="link" href="#Skills">Skills</a></li>
+          <li><a class="link" href="#formulaire">Form</a></li>
+        </ul>  
+    </nav>
+    <!--header-->
+    <header class="header">
+        <ul class="scritte-header">
+            <li><h2 class="Welcome"> <strong>Homer Jay Simpson</strong></h2></li>
+            <li><h2 class="Welcome">Frontend Developer</h2></li>
+        </ul>
+        <img src="https://wallpapersmug.com/download/2880x1800/dd6841/homer-simpson-the-simpsons-minimal.jpg" alt="">
+    </header>
+    <!-- main -->
+    <main class="main-content">
+        <h1 id="About me">About me</h1>
+        <p> 
+            Hello! I’m <strong>Homer Jay Simpson</strong>, an American citizen, living in 742 Evergreen Terrace, Springfield, United States of America. 
+            I’ve done many jobs throughout my life, and I recently found the right one for me thanks to a bootcamp with KeepCoding: Frontend developer. 
+            This my first website and if you would like to get in touch with me or hire me, fill in the form in the “Form” section below. 
+        </p>
+        <hr>
+        <h1 id="Skills">Skills</h1>
+        <p>
+            Below you can find my technical and soft skills: 
+        </p>
+        <!-- skills -->
+        <div class="skill-box">
+            <div class="skill-box1">
+                <p>Python</p>
+                <div class="skills"><div class="python"></div></div>
+                <p>HTML</p>
+                <div class="skills"><div class="html"></div></div>
+                <p>CSS</p>
+                <div class="skills"><div class="css"></div></div>
+                <p>Javascript</p>
+                <div class="skills"><div class="js"></div></div>
+            </div>
+            <div class="skill-box2">
+                <p>Git</p>
+                <div class="skills"><div class="git"></div></div>
+                <p>SQL</p>
+                <div class="skills"><div class="sql"></div></div>
+                <p>Humor</p>
+                <div class="skills"><div class="humor"></div></div>
+                <p>Communication</p>
+                <div class="skills"><div class="comm"></div></div>
+            </div>
+        </div>
+    <!--Formulario de contacto-->
+        <hr>
+        <h1>Fill in this form</h1>
+        <p>Please fill this form</p>
+        <br>
+        <div class="container">
+            <form action="#" method="post" class="formulaire" id="formulaire"> 
+            <div class="row">
+                <div class="label-name">
+                    <label for="name">First Name</label>
+                </div>
+                <input class="input-fields" required id="name" name ="name" type="text" placeholder="Add your name">
+            </div>
+            <div>
+                <div class="label-lastname">
+                    <label for="last name">Last Name</label>
+                </div>
+                <input class="input-fields" required id="last name" name= "last name" type="text" placeholder="Add your last name">
+            </div>
+            <div>
+                <div class="label-phone">
+                    <label for="phone">Phone</label>
+                </div>
+                <input class="input-fields" required type="tel" id = "phone" name="phone" pattern="[0-9]+" placeholder="Add phone number"> 
+            </div>
+        <!-- Formulario con radios -->
+        <div class="choice"><fieldset >
+            <legend>How do you know me?</legend>
+            <label for="University">University</label>
+            <input required id="University" type="radio" name="choice" value="University">
+            <label for="Keepcoding kick-off">Keepcoding kick-off</label>
+            <input required id="Keepcoding kick-off" type="radio" name="choice" value="Keepcoding kick-off">
+            <label for="College">College</label>
+            <input required id = "College" type="radio" name="choice" value="College">
+            <label for="En GitHub">GitHub</label>
+            <input id = "En GitHub" type="radio" name="choice" value="En GitHub">
+        </fieldset></div>
+        <!-- Formulario - resto -->
+        <div>
+            <div><label for="GitHub tag">GitHub tag</label></div>
+            <input type="GitHub tag" id = "GitHub tag" name="text" pattern="^@[^\s]+" class="input-fields" placeholder="Add your Github"> 
+        </div>
+        <div>
+            <div><label for="Description">Description</label></div>
+            <textarea required type="Description" id = "Description" name="text" style="height:100px" placeholder="Write something.." cols="40" class="input-fields"></textarea>
+        </div>
+        <input type="submit" name="Submit" value="Submit" class="submit">
+        </form>
+    </div></main>
+    <!-- footer -->
+    <footer class="footer">
+                    <a href="#" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="Facebook"/>
+                    <a href="#" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin"/>
+                    <a href="#" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GittHub"/>
+    </footer>
+
+</body>
+</html>
